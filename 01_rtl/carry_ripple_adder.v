@@ -1,6 +1,6 @@
 module carry_ripple_adder(
-    input  wire [31:0] i_a,
-    input  wire [31:0] i_b,
+    input [31:0] i_a,
+    input [31:0] i_b,
     output wire [31:0] o_sum
 );
     wire [31:0] carry;

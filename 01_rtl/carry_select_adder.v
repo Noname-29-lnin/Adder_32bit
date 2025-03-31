@@ -1,8 +1,9 @@
 module carry_select_adder(
-    input wire [31:0] i_a, 
-    input wire [31:0] i_b, 
-    output wire [31:0] o_sum
+    input [31:0] i_a, 
+    input [31:0] i_b, 
+    output [31:0] o_sum
 );
+
     wire c8, c16, c24;
     wire [7:0] sum_L;
 
