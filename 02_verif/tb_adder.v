@@ -1,14 +1,21 @@
 `timescale 1ns/1ps 
 module tb_adder();
 
-reg [31:0] a, b;
-reg [31:0] sum;
-
+reg [31:0] CRA_a, CRA_b;
+reg [31:0] CRA_sum;
 carry_ripple_adder tb_CRA(
-    .i_a    (a),
-    .i_b    (b),
-    .o_sum  (sum)
+    .i_a    (CRA_a),
+    .i_b    (CRA_bb),
+    .o_sum  (CRA_sum)
 )
+
+reg [31:0] CLA_a, CLA_b;
+reg [31:0] CLA_sum;
+carry_lookahead_adder tb_CLA(
+    .i_a        (CLA_a),
+    .i_b        (CLA_a),
+    .o_sum      (CLA_sum)
+);
 
 integer i = 0;
 integer tb_sum = 0;
