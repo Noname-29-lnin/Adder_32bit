@@ -1,5 +1,5 @@
 Analysis & Synthesis report for carry_ripple_adder
-Thu Mar 27 21:43:31 2025
+Mon Apr  7 10:30:50 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,8 +14,8 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "full_adder:FA31"
- 10. Port Connectivity Checks: "full_adder:FA0"
+  9. Port Connectivity Checks: "full_adder:ripple_adder[31].FA"
+ 10. Port Connectivity Checks: "full_adder:ripple_adder[0].FA"
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 27 21:43:31 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr  7 10:30:50 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; carry_ripple_adder                             ;
 ; Top-level Entity Name           ; carry_ripple_adder                             ;
@@ -168,82 +168,82 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; carry_ripple_adder.v             ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CRA/carry_ripple_adder.v ;         ;
-; full_adder.v                     ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CRA/full_adder.v         ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                       ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------+---------+
+; carry_ripple_adder.v             ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CRA/carry_ripple_adder.v ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CRA/full_adder.v         ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 40                    ;
-;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 64                    ;
-;     -- 7 input functions                    ; 0                     ;
-;     -- 6 input functions                    ; 15                    ;
-;     -- 5 input functions                    ; 12                    ;
-;     -- 4 input functions                    ; 2                     ;
-;     -- <=3 input functions                  ; 35                    ;
-;                                             ;                       ;
-; Dedicated logic registers                   ; 0                     ;
-;                                             ;                       ;
-; I/O pins                                    ; 96                    ;
-;                                             ;                       ;
-; Total DSP Blocks                            ; 0                     ;
-;                                             ;                       ;
-; Maximum fan-out node                        ; full_adder:FA22|o_c~0 ;
-; Maximum fan-out                             ; 4                     ;
-; Total fan-out                               ; 374                   ;
-; Average fan-out                             ; 1.46                  ;
-+---------------------------------------------+-----------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 40                                   ;
+;                                             ;                                      ;
+; Combinational ALUT usage for logic          ; 64                                   ;
+;     -- 7 input functions                    ; 0                                    ;
+;     -- 6 input functions                    ; 15                                   ;
+;     -- 5 input functions                    ; 12                                   ;
+;     -- 4 input functions                    ; 2                                    ;
+;     -- <=3 input functions                  ; 35                                   ;
+;                                             ;                                      ;
+; Dedicated logic registers                   ; 0                                    ;
+;                                             ;                                      ;
+; I/O pins                                    ; 96                                   ;
+;                                             ;                                      ;
+; Total DSP Blocks                            ; 0                                    ;
+;                                             ;                                      ;
+; Maximum fan-out node                        ; full_adder:ripple_adder[22].FA|o_c~0 ;
+; Maximum fan-out                             ; 4                                    ;
+; Total fan-out                               ; 374                                  ;
+; Average fan-out                             ; 1.46                                 ;
++---------------------------------------------+--------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name        ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
-; |carry_ripple_adder        ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 96   ; 0            ; |carry_ripple_adder                 ; carry_ripple_adder ; work         ;
-;    |full_adder:FA0|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA0  ; full_adder         ; work         ;
-;    |full_adder:FA10|       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA10 ; full_adder         ; work         ;
-;    |full_adder:FA11|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA11 ; full_adder         ; work         ;
-;    |full_adder:FA12|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA12 ; full_adder         ; work         ;
-;    |full_adder:FA13|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA13 ; full_adder         ; work         ;
-;    |full_adder:FA14|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA14 ; full_adder         ; work         ;
-;    |full_adder:FA15|       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA15 ; full_adder         ; work         ;
-;    |full_adder:FA16|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA16 ; full_adder         ; work         ;
-;    |full_adder:FA17|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA17 ; full_adder         ; work         ;
-;    |full_adder:FA18|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA18 ; full_adder         ; work         ;
-;    |full_adder:FA19|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA19 ; full_adder         ; work         ;
-;    |full_adder:FA1|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA1  ; full_adder         ; work         ;
-;    |full_adder:FA20|       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA20 ; full_adder         ; work         ;
-;    |full_adder:FA21|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA21 ; full_adder         ; work         ;
-;    |full_adder:FA22|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA22 ; full_adder         ; work         ;
-;    |full_adder:FA23|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA23 ; full_adder         ; work         ;
-;    |full_adder:FA24|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA24 ; full_adder         ; work         ;
-;    |full_adder:FA25|       ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA25 ; full_adder         ; work         ;
-;    |full_adder:FA26|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA26 ; full_adder         ; work         ;
-;    |full_adder:FA27|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA27 ; full_adder         ; work         ;
-;    |full_adder:FA28|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA28 ; full_adder         ; work         ;
-;    |full_adder:FA29|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA29 ; full_adder         ; work         ;
-;    |full_adder:FA2|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA2  ; full_adder         ; work         ;
-;    |full_adder:FA30|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA30 ; full_adder         ; work         ;
-;    |full_adder:FA31|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA31 ; full_adder         ; work         ;
-;    |full_adder:FA3|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA3  ; full_adder         ; work         ;
-;    |full_adder:FA4|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA4  ; full_adder         ; work         ;
-;    |full_adder:FA5|        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA5  ; full_adder         ; work         ;
-;    |full_adder:FA6|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA6  ; full_adder         ; work         ;
-;    |full_adder:FA7|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA7  ; full_adder         ; work         ;
-;    |full_adder:FA8|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA8  ; full_adder         ; work         ;
-;    |full_adder:FA9|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:FA9  ; full_adder         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name        ; Library Name ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+--------------------+--------------+
+; |carry_ripple_adder                 ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 96   ; 0            ; |carry_ripple_adder                                ; carry_ripple_adder ; work         ;
+;    |full_adder:ripple_adder[0].FA|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[0].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[10].FA| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[10].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[11].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[11].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[12].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[12].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[13].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[13].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[14].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[14].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[15].FA| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[15].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[16].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[16].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[17].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[17].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[18].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[18].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[19].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[19].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[1].FA|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[1].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[20].FA| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[20].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[21].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[21].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[22].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[22].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[23].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[23].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[24].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[24].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[25].FA| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[25].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[26].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[26].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[27].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[27].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[28].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[28].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[29].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[29].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[2].FA|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[2].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[30].FA| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[30].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[31].FA| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[31].FA ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[3].FA|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[3].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[4].FA|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[4].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[5].FA|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[5].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[6].FA|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[6].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[7].FA|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[7].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[8].FA|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[8].FA  ; full_adder         ; work         ;
+;    |full_adder:ripple_adder[9].FA|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_ripple_adder|full_adder:ripple_adder[9].FA  ; full_adder         ; work         ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -263,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA31"                                                                    ;
+; Port Connectivity Checks: "full_adder:ripple_adder[31].FA"                                                     ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -271,13 +271,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA0" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; i_c  ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "full_adder:ripple_adder[0].FA" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; i_c  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------+
@@ -314,16 +314,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Mar 27 21:43:24 2025
+    Info: Processing started: Mon Apr  7 10:30:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off carry_ripple_adder -c carry_ripple_adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file carry_ripple_adder.v
-    Info (12023): Found entity 1: carry_ripple_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CRA/carry_ripple_adder.v Line: 1
+    Info (12023): Found entity 1: carry_ripple_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CRA/carry_ripple_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
-    Info (12023): Found entity 1: full_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CRA/full_adder.v Line: 1
+    Info (12023): Found entity 1: full_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CRA/full_adder.v Line: 1
 Info (12127): Elaborating entity "carry_ripple_adder" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:FA0" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CRA/carry_ripple_adder.v Line: 8
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:ripple_adder[0].FA" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CRA/carry_ripple_adder.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -332,9 +332,9 @@ Info (21057): Implemented 160 device resources after synthesis - the final resou
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 64 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 451 megabytes
-    Info: Processing ended: Thu Mar 27 21:43:31 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 448 megabytes
+    Info: Processing ended: Mon Apr  7 10:30:50 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
 
 

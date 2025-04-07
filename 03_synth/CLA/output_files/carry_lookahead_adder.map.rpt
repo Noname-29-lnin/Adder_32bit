@@ -1,5 +1,5 @@
 Analysis & Synthesis report for carry_lookahead_adder
-Thu Mar 27 21:47:29 2025
+Mon Apr  7 10:55:43 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,33 +14,9 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "full_adder:FA15"
- 10. Port Connectivity Checks: "full_adder:FA14"
- 11. Port Connectivity Checks: "full_adder:FA13"
- 12. Port Connectivity Checks: "full_adder:FA12"
- 13. Port Connectivity Checks: "full_adder:FA11"
- 14. Port Connectivity Checks: "full_adder:FA10"
- 15. Port Connectivity Checks: "full_adder:FA9"
- 16. Port Connectivity Checks: "full_adder:FA8"
- 17. Port Connectivity Checks: "full_adder:FA7"
- 18. Port Connectivity Checks: "full_adder:FA6"
- 19. Port Connectivity Checks: "full_adder:FA5"
- 20. Port Connectivity Checks: "full_adder:FA4"
- 21. Port Connectivity Checks: "full_adder:FA3"
- 22. Port Connectivity Checks: "full_adder:FA2"
- 23. Port Connectivity Checks: "full_adder:FA1"
- 24. Port Connectivity Checks: "full_adder:FA0"
- 25. Port Connectivity Checks: "carry_lookahead_unit:CLA7"
- 26. Port Connectivity Checks: "carry_lookahead_unit:CLA6"
- 27. Port Connectivity Checks: "carry_lookahead_unit:CLA5"
- 28. Port Connectivity Checks: "carry_lookahead_unit:CLA4"
- 29. Port Connectivity Checks: "carry_lookahead_unit:CLA3"
- 30. Port Connectivity Checks: "carry_lookahead_unit:CLA2"
- 31. Port Connectivity Checks: "carry_lookahead_unit:CLA1"
- 32. Port Connectivity Checks: "carry_lookahead_unit:CLA0"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -67,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 27 21:47:29 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr  7 10:55:43 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; carry_lookahead_adder                          ;
 ; Top-level Entity Name           ; carry_lookahead_adder                          ;
@@ -190,70 +166,49 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; carry_lookahead_adder.v          ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v ;         ;
-; full_adder.v                     ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/full_adder.v            ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; carry_lookahead_adder.v          ; yes             ; User Verilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CLA/carry_lookahead_adder.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                     ;
-+---------------------------------------------+-----------------------------------+
-; Resource                                    ; Usage                             ;
-+---------------------------------------------+-----------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 21                                ;
-;                                             ;                                   ;
-; Combinational ALUT usage for logic          ; 31                                ;
-;     -- 7 input functions                    ; 0                                 ;
-;     -- 6 input functions                    ; 10                                ;
-;     -- 5 input functions                    ; 3                                 ;
-;     -- 4 input functions                    ; 5                                 ;
-;     -- <=3 input functions                  ; 13                                ;
-;                                             ;                                   ;
-; Dedicated logic registers                   ; 0                                 ;
-;                                             ;                                   ;
-; I/O pins                                    ; 96                                ;
-;                                             ;                                   ;
-; Total DSP Blocks                            ; 0                                 ;
-;                                             ;                                   ;
-; Maximum fan-out node                        ; carry_lookahead_unit:CLA0|Carry~0 ;
-; Maximum fan-out                             ; 8                                 ;
-; Total fan-out                               ; 236                               ;
-; Average fan-out                             ; 1.06                              ;
-+---------------------------------------------+-----------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 39    ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 62    ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 16    ;
+;     -- 5 input functions                    ; 7     ;
+;     -- 4 input functions                    ; 7     ;
+;     -- <=3 input functions                  ; 32    ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 96    ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; C[23] ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 368   ;
+; Average fan-out                             ; 1.45  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name           ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+-----------------------+--------------+
-; |carry_lookahead_adder         ; 31 (0)              ; 0 (0)                     ; 0                 ; 0          ; 96   ; 0            ; |carry_lookahead_adder                           ; carry_lookahead_adder ; work         ;
-;    |carry_lookahead_unit:CLA0| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|carry_lookahead_unit:CLA0 ; carry_lookahead_unit  ; work         ;
-;    |carry_lookahead_unit:CLA1| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|carry_lookahead_unit:CLA1 ; carry_lookahead_unit  ; work         ;
-;    |carry_lookahead_unit:CLA2| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|carry_lookahead_unit:CLA2 ; carry_lookahead_unit  ; work         ;
-;    |carry_lookahead_unit:CLA3| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|carry_lookahead_unit:CLA3 ; carry_lookahead_unit  ; work         ;
-;    |full_adder:FA0|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA0            ; full_adder            ; work         ;
-;    |full_adder:FA10|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA10           ; full_adder            ; work         ;
-;    |full_adder:FA11|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA11           ; full_adder            ; work         ;
-;    |full_adder:FA12|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA12           ; full_adder            ; work         ;
-;    |full_adder:FA13|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA13           ; full_adder            ; work         ;
-;    |full_adder:FA14|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA14           ; full_adder            ; work         ;
-;    |full_adder:FA15|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA15           ; full_adder            ; work         ;
-;    |full_adder:FA1|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA1            ; full_adder            ; work         ;
-;    |full_adder:FA2|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA2            ; full_adder            ; work         ;
-;    |full_adder:FA3|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA3            ; full_adder            ; work         ;
-;    |full_adder:FA4|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA4            ; full_adder            ; work         ;
-;    |full_adder:FA5|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA5            ; full_adder            ; work         ;
-;    |full_adder:FA6|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA6            ; full_adder            ; work         ;
-;    |full_adder:FA7|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA7            ; full_adder            ; work         ;
-;    |full_adder:FA8|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA8            ; full_adder            ; work         ;
-;    |full_adder:FA9|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |carry_lookahead_adder|full_adder:FA9            ; full_adder            ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------+-----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name           ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-----------------------+--------------+
+; |carry_lookahead_adder     ; 62 (62)             ; 0 (0)                     ; 0                 ; 0          ; 96   ; 0            ; |carry_lookahead_adder ; carry_lookahead_adder ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -272,253 +227,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA15"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA14"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA13"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA12"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA11"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA10"       ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA9"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA8"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA7"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA6"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA5"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA4"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA3"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA2"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA1"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA0"        ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; i_c  ; Input  ; Info     ; Stuck at GND           ;
-; o_c  ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA7"                                                           ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; P     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA6"                                                                 ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; P           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Carry[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA5"                                                                 ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; P           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Carry[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA4"                                                                 ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; P           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Carry[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA3"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; P    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA2"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; P    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA1"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; P    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "carry_lookahead_unit:CLA0"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; C_in ; Input  ; Info     ; Stuck at GND                                                                        ;
-; P    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 32                          ;
-;     normal            ; 32                          ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 10                          ;
+; arriav_lcell_comb     ; 62                          ;
+;     normal            ; 62                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 16                          ;
 ; boundary_port         ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.34                        ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 7.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -537,80 +261,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Mar 27 21:47:22 2025
+    Info: Processing started: Mon Apr  7 10:55:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off carry_lookahead_adder -c carry_lookahead_adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 2 entities, in source file carry_lookahead_adder.v
-    Info (12023): Found entity 1: carry_lookahead_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 1
-    Info (12023): Found entity 2: carry_lookahead_unit File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file carry_lookahead_adder.v
+    Info (12023): Found entity 1: carry_lookahead_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CLA/carry_lookahead_adder.v Line: 85
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
-    Info (12023): Found entity 1: full_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/full_adder.v Line: 1
+    Info (12023): Found entity 1: full_adder File: /home/noname_lnin/Documents/project_tiny/Adder_Block/Adder_32bit/03_synth/CLA/full_adder.v Line: 1
 Info (12127): Elaborating entity "carry_lookahead_adder" for the top level hierarchy
-Warning (10034): Output port "o_sum[31..16]" at carry_lookahead_adder.v(5) has no driver File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-Info (12128): Elaborating entity "carry_lookahead_unit" for hierarchy "carry_lookahead_unit:CLA0" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 10
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:FA0" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 19
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_sum[16]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[17]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[18]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[19]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[20]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[21]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[22]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[23]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[24]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[25]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[26]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[27]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[28]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[29]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[30]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
-    Warning (13410): Pin "o_sum[31]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 32 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_a[16]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[17]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[18]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[19]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[20]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[21]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[22]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[23]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[24]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[25]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[26]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[27]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[28]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[29]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[30]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_a[31]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 2
-    Warning (15610): No output dependent on input pin "i_b[16]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[17]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[18]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[19]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[20]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[21]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[22]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[23]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[24]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[25]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[26]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[27]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[28]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[29]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[30]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-    Warning (15610): No output dependent on input pin "i_b[31]" File: /home/noname_lnin/Documents/project_tiny/Adder_Block/03_synth/CLA/carry_lookahead_adder.v Line: 3
-Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 158 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 64 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 31 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info (21061): Implemented 62 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Thu Mar 27 21:47:29 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Processing ended: Mon Apr  7 10:55:43 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 

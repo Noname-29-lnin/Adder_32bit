@@ -16,8 +16,8 @@ void VBlock_adder_total___024root___eval_triggers__ico(VBlock_adder_total___024r
     VL_DEBUG_IF(VL_DBG_MSGF("+    VBlock_adder_total___024root___eval_triggers__ico\n"); );
     // Body
     vlSelf->__VicoTriggered.set(0U, (IData)(vlSelf->__VicoFirstIteration));
-    vlSelf->__VicoTriggered.set(1U, (vlSelf->Block_adder_total__DOT__CLA__DOT__C 
-                                     != vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__1));
+    vlSelf->__VicoTriggered.set(1U, (vlSelf->Block_adder_total__DOT__CLA__DOT__c 
+                                     != vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__1));
     vlSelf->__VicoTriggered.set(2U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry__1)));
     vlSelf->__VicoTriggered.set(3U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry) 
@@ -34,8 +34,8 @@ void VBlock_adder_total___024root___eval_triggers__ico(VBlock_adder_total___024r
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry__1)));
     vlSelf->__VicoTriggered.set(9U, ((IData)(vlSelf->Block_adder_total__DOT__CSKA__DOT__group_Carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSKA__DOT__group_Carry__1)));
-    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__1 
-        = vlSelf->Block_adder_total__DOT__CLA__DOT__C;
+    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__1 
+        = vlSelf->Block_adder_total__DOT__CLA__DOT__c;
     vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry__1 
         = vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry;
     vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry__1 
@@ -80,26 +80,31 @@ void VBlock_adder_total___024root___eval_triggers__act(VBlock_adder_total___024r
     VBlock_adder_total__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    VBlock_adder_total___024root___eval_triggers__act\n"); );
     // Body
-    vlSelf->__VactTriggered.set(0U, (vlSelf->Block_adder_total__DOT__CLA__DOT__C 
-                                     != vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__2));
-    vlSelf->__VactTriggered.set(1U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry) 
+    vlSelf->__VactTriggered.set(0U, vlSelf->Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level.neq(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level__1));
+    vlSelf->__VactTriggered.set(1U, (vlSelf->Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level.neq(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level__1) 
+                                     | vlSelf->Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level.neq(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level__1)));
+    vlSelf->__VactTriggered.set(2U, (vlSelf->Block_adder_total__DOT__CLA__DOT__c 
+                                     != vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__2));
+    vlSelf->__VactTriggered.set(3U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(2U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry) 
+    vlSelf->__VactTriggered.set(4U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(3U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT__carry) 
+    vlSelf->__VactTriggered.set(5U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(4U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H2_1__DOT__carry) 
+    vlSelf->__VactTriggered.set(6U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H2_1__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H2_1__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(5U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT__carry) 
+    vlSelf->__VactTriggered.set(7U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(6U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H3_1__DOT__carry) 
+    vlSelf->__VactTriggered.set(8U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H3_1__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H3_1__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(7U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry) 
+    vlSelf->__VactTriggered.set(9U, ((IData)(vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry__2)));
-    vlSelf->__VactTriggered.set(8U, ((IData)(vlSelf->Block_adder_total__DOT__CSKA__DOT__group_Carry) 
-                                     != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSKA__DOT__group_Carry__2)));
-    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__2 
-        = vlSelf->Block_adder_total__DOT__CLA__DOT__C;
+    vlSelf->__VactTriggered.set(0xaU, ((IData)(vlSelf->Block_adder_total__DOT__CSKA__DOT__group_Carry) 
+                                       != (IData)(vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSKA__DOT__group_Carry__2)));
+    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level__1.assign(vlSelf->Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level);
+    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level__1.assign(vlSelf->Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level);
+    vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__2 
+        = vlSelf->Block_adder_total__DOT__CLA__DOT__c;
     vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry__2 
         = vlSelf->Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry;
     vlSelf->__Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry__2 
@@ -127,6 +132,8 @@ void VBlock_adder_total___024root___eval_triggers__act(VBlock_adder_total___024r
         vlSelf->__VactTriggered.set(6U, 1U);
         vlSelf->__VactTriggered.set(7U, 1U);
         vlSelf->__VactTriggered.set(8U, 1U);
+        vlSelf->__VactTriggered.set(9U, 1U);
+        vlSelf->__VactTriggered.set(0xaU, 1U);
     }
 #ifdef VL_DEBUG
     if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {

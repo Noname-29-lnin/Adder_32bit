@@ -1,0 +1,739 @@
+|carry_skip_adder
+i_a[0] => CSKA_BLOCK[0].a_block[0].IN1
+i_a[1] => CSKA_BLOCK[0].a_block[1].IN1
+i_a[2] => CSKA_BLOCK[0].a_block[2].IN1
+i_a[3] => CSKA_BLOCK[0].a_block[3].IN1
+i_a[4] => CSKA_BLOCK[1].a_block[0].IN1
+i_a[5] => CSKA_BLOCK[1].a_block[1].IN1
+i_a[6] => CSKA_BLOCK[1].a_block[2].IN1
+i_a[7] => CSKA_BLOCK[1].a_block[3].IN1
+i_a[8] => CSKA_BLOCK[2].a_block[0].IN1
+i_a[9] => CSKA_BLOCK[2].a_block[1].IN1
+i_a[10] => CSKA_BLOCK[2].a_block[2].IN1
+i_a[11] => CSKA_BLOCK[2].a_block[3].IN1
+i_a[12] => CSKA_BLOCK[3].a_block[0].IN1
+i_a[13] => CSKA_BLOCK[3].a_block[1].IN1
+i_a[14] => CSKA_BLOCK[3].a_block[2].IN1
+i_a[15] => CSKA_BLOCK[3].a_block[3].IN1
+i_a[16] => CSKA_BLOCK[4].a_block[0].IN1
+i_a[17] => CSKA_BLOCK[4].a_block[1].IN1
+i_a[18] => CSKA_BLOCK[4].a_block[2].IN1
+i_a[19] => CSKA_BLOCK[4].a_block[3].IN1
+i_a[20] => CSKA_BLOCK[5].a_block[0].IN1
+i_a[21] => CSKA_BLOCK[5].a_block[1].IN1
+i_a[22] => CSKA_BLOCK[5].a_block[2].IN1
+i_a[23] => CSKA_BLOCK[5].a_block[3].IN1
+i_a[24] => CSKA_BLOCK[6].a_block[0].IN1
+i_a[25] => CSKA_BLOCK[6].a_block[1].IN1
+i_a[26] => CSKA_BLOCK[6].a_block[2].IN1
+i_a[27] => CSKA_BLOCK[6].a_block[3].IN1
+i_a[28] => CSKA_BLOCK[7].a_block[0].IN1
+i_a[29] => CSKA_BLOCK[7].a_block[1].IN1
+i_a[30] => CSKA_BLOCK[7].a_block[2].IN1
+i_a[31] => CSKA_BLOCK[7].a_block[3].IN1
+i_b[0] => CSKA_BLOCK[0].b_block[0].IN1
+i_b[1] => CSKA_BLOCK[0].b_block[1].IN1
+i_b[2] => CSKA_BLOCK[0].b_block[2].IN1
+i_b[3] => CSKA_BLOCK[0].b_block[3].IN1
+i_b[4] => CSKA_BLOCK[1].b_block[0].IN1
+i_b[5] => CSKA_BLOCK[1].b_block[1].IN1
+i_b[6] => CSKA_BLOCK[1].b_block[2].IN1
+i_b[7] => CSKA_BLOCK[1].b_block[3].IN1
+i_b[8] => CSKA_BLOCK[2].b_block[0].IN1
+i_b[9] => CSKA_BLOCK[2].b_block[1].IN1
+i_b[10] => CSKA_BLOCK[2].b_block[2].IN1
+i_b[11] => CSKA_BLOCK[2].b_block[3].IN1
+i_b[12] => CSKA_BLOCK[3].b_block[0].IN1
+i_b[13] => CSKA_BLOCK[3].b_block[1].IN1
+i_b[14] => CSKA_BLOCK[3].b_block[2].IN1
+i_b[15] => CSKA_BLOCK[3].b_block[3].IN1
+i_b[16] => CSKA_BLOCK[4].b_block[0].IN1
+i_b[17] => CSKA_BLOCK[4].b_block[1].IN1
+i_b[18] => CSKA_BLOCK[4].b_block[2].IN1
+i_b[19] => CSKA_BLOCK[4].b_block[3].IN1
+i_b[20] => CSKA_BLOCK[5].b_block[0].IN1
+i_b[21] => CSKA_BLOCK[5].b_block[1].IN1
+i_b[22] => CSKA_BLOCK[5].b_block[2].IN1
+i_b[23] => CSKA_BLOCK[5].b_block[3].IN1
+i_b[24] => CSKA_BLOCK[6].b_block[0].IN1
+i_b[25] => CSKA_BLOCK[6].b_block[1].IN1
+i_b[26] => CSKA_BLOCK[6].b_block[2].IN1
+i_b[27] => CSKA_BLOCK[6].b_block[3].IN1
+i_b[28] => CSKA_BLOCK[7].b_block[0].IN1
+i_b[29] => CSKA_BLOCK[7].b_block[1].IN1
+i_b[30] => CSKA_BLOCK[7].b_block[2].IN1
+i_b[31] => CSKA_BLOCK[7].b_block[3].IN1
+o_sum[0] <= ripple_carry_4bit_adder:CSKA_BLOCK[0].rca.S
+o_sum[1] <= ripple_carry_4bit_adder:CSKA_BLOCK[0].rca.S
+o_sum[2] <= ripple_carry_4bit_adder:CSKA_BLOCK[0].rca.S
+o_sum[3] <= ripple_carry_4bit_adder:CSKA_BLOCK[0].rca.S
+o_sum[4] <= ripple_carry_4bit_adder:CSKA_BLOCK[1].rca.S
+o_sum[5] <= ripple_carry_4bit_adder:CSKA_BLOCK[1].rca.S
+o_sum[6] <= ripple_carry_4bit_adder:CSKA_BLOCK[1].rca.S
+o_sum[7] <= ripple_carry_4bit_adder:CSKA_BLOCK[1].rca.S
+o_sum[8] <= ripple_carry_4bit_adder:CSKA_BLOCK[2].rca.S
+o_sum[9] <= ripple_carry_4bit_adder:CSKA_BLOCK[2].rca.S
+o_sum[10] <= ripple_carry_4bit_adder:CSKA_BLOCK[2].rca.S
+o_sum[11] <= ripple_carry_4bit_adder:CSKA_BLOCK[2].rca.S
+o_sum[12] <= ripple_carry_4bit_adder:CSKA_BLOCK[3].rca.S
+o_sum[13] <= ripple_carry_4bit_adder:CSKA_BLOCK[3].rca.S
+o_sum[14] <= ripple_carry_4bit_adder:CSKA_BLOCK[3].rca.S
+o_sum[15] <= ripple_carry_4bit_adder:CSKA_BLOCK[3].rca.S
+o_sum[16] <= ripple_carry_4bit_adder:CSKA_BLOCK[4].rca.S
+o_sum[17] <= ripple_carry_4bit_adder:CSKA_BLOCK[4].rca.S
+o_sum[18] <= ripple_carry_4bit_adder:CSKA_BLOCK[4].rca.S
+o_sum[19] <= ripple_carry_4bit_adder:CSKA_BLOCK[4].rca.S
+o_sum[20] <= ripple_carry_4bit_adder:CSKA_BLOCK[5].rca.S
+o_sum[21] <= ripple_carry_4bit_adder:CSKA_BLOCK[5].rca.S
+o_sum[22] <= ripple_carry_4bit_adder:CSKA_BLOCK[5].rca.S
+o_sum[23] <= ripple_carry_4bit_adder:CSKA_BLOCK[5].rca.S
+o_sum[24] <= ripple_carry_4bit_adder:CSKA_BLOCK[6].rca.S
+o_sum[25] <= ripple_carry_4bit_adder:CSKA_BLOCK[6].rca.S
+o_sum[26] <= ripple_carry_4bit_adder:CSKA_BLOCK[6].rca.S
+o_sum[27] <= ripple_carry_4bit_adder:CSKA_BLOCK[6].rca.S
+o_sum[28] <= ripple_carry_4bit_adder:CSKA_BLOCK[7].rca.S
+o_sum[29] <= ripple_carry_4bit_adder:CSKA_BLOCK[7].rca.S
+o_sum[30] <= ripple_carry_4bit_adder:CSKA_BLOCK[7].rca.S
+o_sum[31] <= ripple_carry_4bit_adder:CSKA_BLOCK[7].rca.S
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[0].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[0].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[0].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[0].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[0].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[1].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[1].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[1].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[1].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[1].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[2].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[2].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[2].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[2].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[2].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[3].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[3].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[3].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[3].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[3].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[4].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[4].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[4].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[4].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[4].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[5].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[5].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[5].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[5].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[5].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[6].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[6].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[6].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[6].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[6].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[7].rca
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Cin => Cin.IN1
+S[0] <= full_adder:FA0.o_s
+S[1] <= full_adder:FA1.o_s
+S[2] <= full_adder:FA2.o_s
+S[3] <= full_adder:FA3.o_s
+Cout_block[0] <= carry[0].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[1] <= carry[1].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[2] <= carry[2].DB_MAX_OUTPUT_PORT_TYPE
+Cout_block[3] <= full_adder:FA3.o_c
+P_out[0] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[1] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[2] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+P_out[3] <= P_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[7].rca|full_adder:FA0
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[7].rca|full_adder:FA1
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[7].rca|full_adder:FA2
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_skip_adder|ripple_carry_4bit_adder:CSKA_BLOCK[7].rca|full_adder:FA3
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+

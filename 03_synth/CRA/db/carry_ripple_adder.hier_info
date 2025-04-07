@@ -63,41 +63,41 @@ i_b[28] => i_b[28].IN1
 i_b[29] => i_b[29].IN1
 i_b[30] => i_b[30].IN1
 i_b[31] => i_b[31].IN1
-o_sum[0] << full_adder:FA0.o_s
-o_sum[1] << full_adder:FA1.o_s
-o_sum[2] << full_adder:FA2.o_s
-o_sum[3] << full_adder:FA3.o_s
-o_sum[4] << full_adder:FA4.o_s
-o_sum[5] << full_adder:FA5.o_s
-o_sum[6] << full_adder:FA6.o_s
-o_sum[7] << full_adder:FA7.o_s
-o_sum[8] << full_adder:FA8.o_s
-o_sum[9] << full_adder:FA9.o_s
-o_sum[10] << full_adder:FA10.o_s
-o_sum[11] << full_adder:FA11.o_s
-o_sum[12] << full_adder:FA12.o_s
-o_sum[13] << full_adder:FA13.o_s
-o_sum[14] << full_adder:FA14.o_s
-o_sum[15] << full_adder:FA15.o_s
-o_sum[16] << full_adder:FA16.o_s
-o_sum[17] << full_adder:FA17.o_s
-o_sum[18] << full_adder:FA18.o_s
-o_sum[19] << full_adder:FA19.o_s
-o_sum[20] << full_adder:FA20.o_s
-o_sum[21] << full_adder:FA21.o_s
-o_sum[22] << full_adder:FA22.o_s
-o_sum[23] << full_adder:FA23.o_s
-o_sum[24] << full_adder:FA24.o_s
-o_sum[25] << full_adder:FA25.o_s
-o_sum[26] << full_adder:FA26.o_s
-o_sum[27] << full_adder:FA27.o_s
-o_sum[28] << full_adder:FA28.o_s
-o_sum[29] << full_adder:FA29.o_s
-o_sum[30] << full_adder:FA30.o_s
-o_sum[31] << full_adder:FA31.o_s
+o_sum[0] <= full_adder:ripple_adder[0].FA.o_s
+o_sum[1] <= full_adder:ripple_adder[1].FA.o_s
+o_sum[2] <= full_adder:ripple_adder[2].FA.o_s
+o_sum[3] <= full_adder:ripple_adder[3].FA.o_s
+o_sum[4] <= full_adder:ripple_adder[4].FA.o_s
+o_sum[5] <= full_adder:ripple_adder[5].FA.o_s
+o_sum[6] <= full_adder:ripple_adder[6].FA.o_s
+o_sum[7] <= full_adder:ripple_adder[7].FA.o_s
+o_sum[8] <= full_adder:ripple_adder[8].FA.o_s
+o_sum[9] <= full_adder:ripple_adder[9].FA.o_s
+o_sum[10] <= full_adder:ripple_adder[10].FA.o_s
+o_sum[11] <= full_adder:ripple_adder[11].FA.o_s
+o_sum[12] <= full_adder:ripple_adder[12].FA.o_s
+o_sum[13] <= full_adder:ripple_adder[13].FA.o_s
+o_sum[14] <= full_adder:ripple_adder[14].FA.o_s
+o_sum[15] <= full_adder:ripple_adder[15].FA.o_s
+o_sum[16] <= full_adder:ripple_adder[16].FA.o_s
+o_sum[17] <= full_adder:ripple_adder[17].FA.o_s
+o_sum[18] <= full_adder:ripple_adder[18].FA.o_s
+o_sum[19] <= full_adder:ripple_adder[19].FA.o_s
+o_sum[20] <= full_adder:ripple_adder[20].FA.o_s
+o_sum[21] <= full_adder:ripple_adder[21].FA.o_s
+o_sum[22] <= full_adder:ripple_adder[22].FA.o_s
+o_sum[23] <= full_adder:ripple_adder[23].FA.o_s
+o_sum[24] <= full_adder:ripple_adder[24].FA.o_s
+o_sum[25] <= full_adder:ripple_adder[25].FA.o_s
+o_sum[26] <= full_adder:ripple_adder[26].FA.o_s
+o_sum[27] <= full_adder:ripple_adder[27].FA.o_s
+o_sum[28] <= full_adder:ripple_adder[28].FA.o_s
+o_sum[29] <= full_adder:ripple_adder[29].FA.o_s
+o_sum[30] <= full_adder:ripple_adder[30].FA.o_s
+o_sum[31] <= full_adder:ripple_adder[31].FA.o_s
 
 
-|carry_ripple_adder|full_adder:FA0
+|carry_ripple_adder|full_adder:ripple_adder[0].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -111,7 +111,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA1
+|carry_ripple_adder|full_adder:ripple_adder[1].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -125,7 +125,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA2
+|carry_ripple_adder|full_adder:ripple_adder[2].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -139,7 +139,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA3
+|carry_ripple_adder|full_adder:ripple_adder[3].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -153,7 +153,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA4
+|carry_ripple_adder|full_adder:ripple_adder[4].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -167,7 +167,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA5
+|carry_ripple_adder|full_adder:ripple_adder[5].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -181,7 +181,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA6
+|carry_ripple_adder|full_adder:ripple_adder[6].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -195,7 +195,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA7
+|carry_ripple_adder|full_adder:ripple_adder[7].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -209,7 +209,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA8
+|carry_ripple_adder|full_adder:ripple_adder[8].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -223,7 +223,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA9
+|carry_ripple_adder|full_adder:ripple_adder[9].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -237,7 +237,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA10
+|carry_ripple_adder|full_adder:ripple_adder[10].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -251,7 +251,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA11
+|carry_ripple_adder|full_adder:ripple_adder[11].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -265,7 +265,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA12
+|carry_ripple_adder|full_adder:ripple_adder[12].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -279,7 +279,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA13
+|carry_ripple_adder|full_adder:ripple_adder[13].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -293,7 +293,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA14
+|carry_ripple_adder|full_adder:ripple_adder[14].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -307,7 +307,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA15
+|carry_ripple_adder|full_adder:ripple_adder[15].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -321,7 +321,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA16
+|carry_ripple_adder|full_adder:ripple_adder[16].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -335,7 +335,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA17
+|carry_ripple_adder|full_adder:ripple_adder[17].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -349,7 +349,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA18
+|carry_ripple_adder|full_adder:ripple_adder[18].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -363,7 +363,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA19
+|carry_ripple_adder|full_adder:ripple_adder[19].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -377,7 +377,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA20
+|carry_ripple_adder|full_adder:ripple_adder[20].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -391,7 +391,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA21
+|carry_ripple_adder|full_adder:ripple_adder[21].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -405,7 +405,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA22
+|carry_ripple_adder|full_adder:ripple_adder[22].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -419,7 +419,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA23
+|carry_ripple_adder|full_adder:ripple_adder[23].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -433,7 +433,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA24
+|carry_ripple_adder|full_adder:ripple_adder[24].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -447,7 +447,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA25
+|carry_ripple_adder|full_adder:ripple_adder[25].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -461,7 +461,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA26
+|carry_ripple_adder|full_adder:ripple_adder[26].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -475,7 +475,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA27
+|carry_ripple_adder|full_adder:ripple_adder[27].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -489,7 +489,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA28
+|carry_ripple_adder|full_adder:ripple_adder[28].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -503,7 +503,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA29
+|carry_ripple_adder|full_adder:ripple_adder[29].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -517,7 +517,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA30
+|carry_ripple_adder|full_adder:ripple_adder[30].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0
@@ -531,7 +531,7 @@ o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
 o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|carry_ripple_adder|full_adder:FA31
+|carry_ripple_adder|full_adder:ripple_adder[31].FA
 i_a => o_s.IN0
 i_a => o_c.IN0
 i_a => o_c.IN0

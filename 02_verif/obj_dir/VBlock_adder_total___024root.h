@@ -16,8 +16,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
     // DESIGN SPECIFIC STATE
     // Anonymous structures to workaround compiler member-count bugs
     struct {
-        CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellout__FA0__o_s;
-        CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA1__i_c;
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA2__i_c;
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA3__i_c;
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA4__i_c;
@@ -48,6 +46,72 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA29__i_c;
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA30__i_c;
         CData/*0:0*/ Block_adder_total__DOT__CRA__DOT____Vcellinp__FA31__i_c;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__0__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__0__KET____DOT__FA__o_s;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__1__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__1__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__2__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__2__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__3__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__3__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__4__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__4__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__5__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__5__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__6__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__6__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__7__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__7__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__8__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__8__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__9__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__9__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__10__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__10__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__11__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__11__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__12__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__12__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__13__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__13__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__14__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__14__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__15__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__15__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__16__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__16__KET____DOT__FA__o_p;
+    };
+    struct {
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__17__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__17__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__18__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__18__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__19__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__19__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__20__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__20__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__21__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__21__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__22__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__22__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__23__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__23__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__24__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__24__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__25__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__25__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__26__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__26__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__27__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__27__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__28__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__28__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__29__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__29__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__30__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__30__KET____DOT__FA__o_p;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__31__KET____DOT__FA__o_g;
+        CData/*0:0*/ Block_adder_total__DOT__CLA__DOT____Vcellout__gen_fulladder__BRA__31__KET____DOT__FA__o_p;
         CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__c8;
         CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__c16;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry;
@@ -58,12 +122,32 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_L__DOT____Vcellout__FA5__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_L__DOT____Vcellout__FA6__o_c;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT__carry;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA1__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA2__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA3__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA4__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA5__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT____Vcellout__FA6__o_c;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT__carry;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA1__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA2__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA3__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA4__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA5__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT____Vcellout__FA6__o_c;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H2_1__DOT__carry;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA1__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA2__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA3__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA4__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA5__o_c;
+        CData/*0:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT____Vcellout__FA6__o_c;
         CData/*7:0*/ Block_adder_total__DOT__CSA__DOT__RCA_H3_1__DOT__carry;
         CData/*7:0*/ Block_adder_total__DOT__CSKA__DOT__group_P;
+    };
+    struct {
         CData/*7:0*/ Block_adder_total__DOT__CSKA__DOT__group_Carry;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__0__KET____DOT__rca__DOT____Vcellout__FA0__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__0__KET____DOT__rca__DOT____Vcellout__FA1__o_c;
@@ -80,8 +164,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__4__KET____DOT__rca__DOT____Vcellout__FA0__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__4__KET____DOT__rca__DOT____Vcellout__FA1__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__4__KET____DOT__rca__DOT____Vcellout__FA2__o_c;
-    };
-    struct {
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__5__KET____DOT__rca__DOT____Vcellout__FA0__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__5__KET____DOT__rca__DOT____Vcellout__FA1__o_c;
         CData/*0:0*/ Block_adder_total__DOT__CSKA__DOT__CSKA_BLOCK__BRA__5__KET____DOT__rca__DOT____Vcellout__FA2__o_c;
@@ -130,6 +212,8 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hcba26e24__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_he28b5042__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h377570d3__0;
+    };
+    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h0d399fb5__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hcca504e2__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hf1b66a1a__0;
@@ -146,8 +230,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h131d3ba3__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_he252bae5__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_he14356fb__0;
-    };
-    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h386a6bbd__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h38eef1ba__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h361ebc08__0;
@@ -196,6 +278,8 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h4cb699b1__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_he8cec54d__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h0f378dc9__0;
+    };
+    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h4b232004__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h3426f76d__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h2b6250a0__0;
@@ -212,8 +296,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h2b88d2f9__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hfd311044__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h6e4f2179__0;
-    };
-    struct {
         CData/*3:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h1d2846ec__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h3c8ad5df__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h3d38d598__0;
@@ -262,6 +344,8 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h5fb0cac5__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hf852b517__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h49cd688b__0;
+    };
+    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h026cf16a__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h00e60d48__0;
         CData/*7:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h349ebd05__0;
@@ -278,8 +362,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h7da363f6__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h0c8bee28__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hd639f895__0;
-    };
-    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h6b68da7e__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h47ccf2e8__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h1ed7b901__0;
@@ -328,6 +410,8 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h6ce873d1__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_hc3442b04__0;
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_he8135cde__0;
+    };
+    struct {
         CData/*0:0*/ Block_adder_total__DOT__KSA__DOT____VdfgTmp_h5b1e7ec7__0;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_L__DOT__carry__0;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H1__DOT__carry__0;
@@ -344,8 +428,6 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H0__DOT__carry__1;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H2_1__DOT__carry__1;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H2_0__DOT__carry__1;
-    };
-    struct {
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H3_1__DOT__carry__1;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSA__DOT__RCA_H3_0__DOT__carry__1;
         CData/*7:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CSKA__DOT__group_Carry__1;
@@ -370,20 +452,28 @@ class alignas(VL_CACHE_LINE_BYTES) VBlock_adder_total___024root final : public V
         VL_OUT(o_CSA,31,0);
         VL_OUT(o_CSKA,31,0);
         VL_OUT(o_KSA,31,0);
-        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__P;
-        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__G;
-        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__C;
+        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__g;
+        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__p;
+        IData/*31:0*/ Block_adder_total__DOT__CLA__DOT__c;
         IData/*31:0*/ Block_adder_total__DOT__CSKA__DOT__c_internal;
-        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__0;
-        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__1;
-        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__C__2;
+        IData/*31:0*/ Block_adder_total__DOT__KSA__DOT__G;
+        IData/*31:0*/ Block_adder_total__DOT__KSA__DOT__P;
+        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__0;
+        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__1;
+        IData/*31:0*/ __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__c__2;
         IData/*31:0*/ __VactIterCount;
-        VlUnpacked<CData/*0:0*/, 18> __Vm_traceActivity;
+        VlUnpacked<IData/*31:0*/, 6> Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level;
+        VlUnpacked<IData/*31:0*/, 6> Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level;
+        VlUnpacked<IData/*31:0*/, 6> __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level__0;
+        VlUnpacked<IData/*31:0*/, 6> __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level__0;
+        VlUnpacked<IData/*31:0*/, 6> __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__p_level__1;
+        VlUnpacked<IData/*31:0*/, 6> __Vtrigprevexpr___TOP__Block_adder_total__DOT__CLA__DOT__CLA32__DOT__g_level__1;
+        VlUnpacked<CData/*0:0*/, 22> __Vm_traceActivity;
     };
-    VlTriggerVec<10> __VstlTriggered;
+    VlTriggerVec<12> __VstlTriggered;
     VlTriggerVec<10> __VicoTriggered;
-    VlTriggerVec<9> __VactTriggered;
-    VlTriggerVec<9> __VnbaTriggered;
+    VlTriggerVec<11> __VactTriggered;
+    VlTriggerVec<11> __VnbaTriggered;
 
     // INTERNAL VARIABLES
     VBlock_adder_total__Syms* const vlSymsp;

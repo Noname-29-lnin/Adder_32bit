@@ -3,53 +3,131 @@ module carry_lookahead_adder(
     input  wire [31:0] i_b,
     output wire [31:0] o_sum
 );
-    wire [31:0] carry;
-    wire [31:0] P, G;
 
-    // Chia thành 8 nhóm CLA 4-bit
-    carry_lookahead_unit CLA0 (.A(i_a[3:0]),   .B(i_b[3:0]),   .C_in(1'b0),      .P(P[3:0]),   .G(G[3:0]),   .Carry(carry[3:0]));
-    carry_lookahead_unit CLA1 (.A(i_a[7:4]),   .B(i_b[7:4]),   .C_in(carry[3]),  .P(P[7:4]),   .G(G[7:4]),   .Carry(carry[7:4]));
-    carry_lookahead_unit CLA2 (.A(i_a[11:8]),  .B(i_b[11:8]),  .C_in(carry[7]),  .P(P[11:8]),  .G(G[11:8]),  .Carry(carry[11:8]));
-    carry_lookahead_unit CLA3 (.A(i_a[15:12]), .B(i_b[15:12]), .C_in(carry[11]), .P(P[15:12]), .G(G[15:12]), .Carry(carry[15:12]));
-    carry_lookahead_unit CLA4 (.A(i_a[19:16]), .B(i_b[19:16]), .C_in(carry[15]), .P(P[19:16]), .G(G[19:16]), .Carry(carry[19:16]));
-    carry_lookahead_unit CLA5 (.A(i_a[23:20]), .B(i_b[23:20]), .C_in(carry[19]), .P(P[23:20]), .G(G[23:20]), .Carry(carry[23:20]));
-    carry_lookahead_unit CLA6 (.A(i_a[27:24]), .B(i_b[27:24]), .C_in(carry[23]), .P(P[27:24]), .G(G[27:24]), .Carry(carry[27:24]));
-    carry_lookahead_unit CLA7 (.A(i_a[31:28]), .B(i_b[31:28]), .C_in(carry[27]), .P(P[31:28]), .G(G[31:28]), .Carry(carry[31:28]));
+    wire [31:0] g, p;    // generate và propagate
+    wire [31:0] c;       // carry
+    wire        c32, P, G;
 
-    full_adder FA0  (.i_a(i_a[0]),  .i_b(i_b[0]),  .i_c(1'b0),      .o_s(o_sum[0]),  .o_c());
-    full_adder FA1  (.i_a(i_a[1]),  .i_b(i_b[1]),  .i_c(carry[0]),  .o_s(o_sum[1]),  .o_c());
-    full_adder FA2  (.i_a(i_a[2]),  .i_b(i_b[2]),  .i_c(carry[1]),  .o_s(o_sum[2]),  .o_c());
-    full_adder FA3  (.i_a(i_a[3]),  .i_b(i_b[3]),  .i_c(carry[2]),  .o_s(o_sum[3]),  .o_c());
-    full_adder FA4  (.i_a(i_a[4]),  .i_b(i_b[4]),  .i_c(carry[3]),  .o_s(o_sum[4]),  .o_c());
-    full_adder FA5  (.i_a(i_a[5]),  .i_b(i_b[5]),  .i_c(carry[4]),  .o_s(o_sum[5]),  .o_c());
-    full_adder FA6  (.i_a(i_a[6]),  .i_b(i_b[6]),  .i_c(carry[5]),  .o_s(o_sum[6]),  .o_c());
-    full_adder FA7  (.i_a(i_a[7]),  .i_b(i_b[7]),  .i_c(carry[6]),  .o_s(o_sum[7]),  .o_c());
-    full_adder FA8  (.i_a(i_a[8]),  .i_b(i_b[8]),  .i_c(carry[7]),  .o_s(o_sum[8]),  .o_c());
-    full_adder FA9  (.i_a(i_a[9]),  .i_b(i_b[9]),  .i_c(carry[8]),  .o_s(o_sum[9]),  .o_c());
-    full_adder FA10 (.i_a(i_a[10]), .i_b(i_b[10]), .i_c(carry[9]),  .o_s(o_sum[10]), .o_c());
-    full_adder FA11 (.i_a(i_a[11]), .i_b(i_b[11]), .i_c(carry[10]), .o_s(o_sum[11]), .o_c());
-    full_adder FA12 (.i_a(i_a[12]), .i_b(i_b[12]), .i_c(carry[11]), .o_s(o_sum[12]), .o_c());
-    full_adder FA13 (.i_a(i_a[13]), .i_b(i_b[13]), .i_c(carry[12]), .o_s(o_sum[13]), .o_c());
-    full_adder FA14 (.i_a(i_a[14]), .i_b(i_b[14]), .i_c(carry[13]), .o_s(o_sum[14]), .o_c());
-    full_adder FA15 (.i_a(i_a[15]), .i_b(i_b[15]), .i_c(carry[14]), .o_s(o_sum[15]), .o_c());
+    // Sinh tín hiệu G, P và tính tổng từng bit
+    genvar i;
+    generate
+        for(i = 0; i < 32; i = i + 1) begin : gen_fulladder
+            full_adder FA (
+                .i_a(i_a[i]),
+                .i_b(i_b[i]),
+                .i_c((i == 0) ? 1'b0 : c[i-1]),
+                .o_s(o_sum[i]),
+                .o_p(p[i]),
+                .o_g(g[i])
+            );
+        end
+    endgenerate
+
+    // Tính toàn bộ carry bits
+    carry_lookahead_32bit_unit CLA32 (
+        .i_c0(1'b0),
+        .i_p(p),
+        .i_g(g),
+        .o_c(c),
+        .o_c32(c32),
+        .o_p(P),
+        .o_g(G)
+    );
 
 endmodule
 
-module carry_lookahead_unit(
-    input  wire [3:0] A,
-    input  wire [3:0] B,
-    input  wire C_in,
-    output wire [3:0] P,
-    output wire [3:0] G,
-    output wire [3:0] Carry
+
+module carry_lookahead_32bit_unit(
+    input  wire        i_c0,
+    input  wire [31:0] i_p,
+    input  wire [31:0] i_g,
+    output wire [31:0] o_c,   // C[0] = C1, C[31] = C32
+    output wire        o_c32, // Carry out cuối cùng
+    output wire        o_p,   // Propagate tổng thể
+    output wire        o_g    // Generate tổng thể
 );
-    // Tính toán các giá trị Propagate và Generate
-    assign P = A ^ B;  // Propagate (P)
-    assign G = A & B;  // Generate (G)
 
-    // Tính toán các bit carry thông qua thuật toán C[i] = G[i] + P[i].C[i-1]
-    assign Carry[0] = C_in;
-    assign Carry[1] = G[0] | (P[0] & C_in);
-    assign Carry[2] = G[1] | (P[1] & G[0]) | (P[1] & P[0] & C_in);
-    assign Carry[3] = G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] & C_in);
+    assign o_c[0] = i_g[0] | (i_p[0] & i_c0);
+
+    genvar i;
+    generate
+        for(i = 1; i < 32; i = i + 1) begin : gen_carry
+            assign o_c[i] = i_g[i] | (i_p[i] & o_c[i-1]);
+        end
+    endgenerate
+
+    assign o_c32 = o_c[31];
+    assign o_p = &i_p; // Tất cả các bits đều propagate
+    
+    // Tính toán Generate tổng thể theo cách đệ quy
+    wire [31:0] g_level [5:0]; // Các mức cho tính toán tree
+    wire [31:0] p_level [5:0];
+    
+    // Khởi tạo level 0
+    assign g_level[0] = i_g;
+    assign p_level[0] = i_p;
+    
+    // Tính toán theo cây nhị phân
+    genvar k;
+    generate
+        for(k = 0; k < 5; k = k + 1) begin : gen_tree
+            for(i = 0; i < 32/(1 << (k+1)); i = i + 1) begin : gen_level
+                assign p_level[k+1][i] = p_level[k][2*i+1] & p_level[k][2*i];
+                assign g_level[k+1][i] = g_level[k][2*i+1] | (p_level[k][2*i+1] & g_level[k][2*i]);
+            end
+        end
+    endgenerate
+    
+    assign o_g = g_level[5][0]; // Kết quả cuối cùng
+
 endmodule
+
+// module carry_lookahead_adder(
+//     input  wire [31:0] i_a,
+//     input  wire [31:0] i_b,
+//     output wire [31:0] o_sum
+// );
+//     wire [31:0] P, G, C;
+//     
+//     // Tính toán Propagate (P) và Generate (G)
+//     assign P = i_a ^ i_b; // P[i] = A[i] XOR B[i]
+//     assign G = i_a & i_b; // G[i] = A[i] AND B[i]
+//     
+//     // Tính toán Carry C[i] = G[i-1] + P[i-1] * C[i-1]
+//     assign C[0] = 1'b0; // Carry đầu vào
+//     assign C[1] = G[0] | (P[0] & C[0]);
+//     assign C[2] = G[1] | (P[1] & C[1]);
+//     assign C[3] = G[2] | (P[2] & C[2]);
+//     assign C[4] = G[3] | (P[3] & C[3]);
+//     assign C[5] = G[4] | (P[4] & C[4]);
+//     assign C[6] = G[5] | (P[5] & C[5]);
+//     assign C[7] = G[6] | (P[6] & C[6]);
+//     assign C[8] = G[7] | (P[7] & C[7]);
+//     assign C[9] = G[8] | (P[8] & C[8]);
+//     assign C[10] = G[9] | (P[9] & C[9]);
+//     assign C[11] = G[10] | (P[10] & C[10]);
+//     assign C[12] = G[11] | (P[11] & C[11]);
+//     assign C[13] = G[12] | (P[12] & C[12]);
+//     assign C[14] = G[13] | (P[13] & C[13]);
+//     assign C[15] = G[14] | (P[14] & C[14]);
+//     assign C[16] = G[15] | (P[15] & C[15]);
+//     assign C[17] = G[16] | (P[16] & C[16]);
+//     assign C[18] = G[17] | (P[17] & C[17]);
+//     assign C[19] = G[18] | (P[18] & C[18]);
+//     assign C[20] = G[19] | (P[19] & C[19]);
+//     assign C[21] = G[20] | (P[20] & C[20]);
+//     assign C[22] = G[21] | (P[21] & C[21]);
+//     assign C[23] = G[22] | (P[22] & C[22]);
+//     assign C[24] = G[23] | (P[23] & C[23]);
+//     assign C[25] = G[24] | (P[24] & C[24]);
+//     assign C[26] = G[25] | (P[25] & C[25]);
+//     assign C[27] = G[26] | (P[26] & C[26]);
+//     assign C[28] = G[27] | (P[27] & C[27]);
+//     assign C[29] = G[28] | (P[28] & C[28]);
+//     assign C[30] = G[29] | (P[29] & C[29]);
+//     assign C[31] = G[30] | (P[30] & C[30]);
+//     
+//     // Tính tổng đầu ra
+//     assign o_sum = P ^ C;
+//     
+// endmodule
